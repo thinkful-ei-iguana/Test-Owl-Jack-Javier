@@ -1,5 +1,6 @@
 import React from 'react';
 import Participants from './Participants';
+import './chat.css'
 
 
 export default function Chat({partId,type, message, time, timestamp}){
@@ -49,16 +50,19 @@ export default function Chat({partId,type, message, time, timestamp}){
 
     if(type !== 'message'){
         return (
+            <div id="chat-container">
             <div className='chat-item-not-message'>{statement}</div>
-
+            </div>
         );
     } else {
         const date = new Date(time).toLocaleTimeString('en-US');
         return (
+            <div id="chat-container">
             <div className='chat-item-message'>
                 <img className="chat-image" src={partName.avatar} alt="user avatar" /> 
                 <p className="chat-name-and-time">{partName.name} {date}</p>  
                 <p className="chat-message">{message}</p>  
+            </div>
             </div>
     
         );

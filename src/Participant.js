@@ -19,10 +19,12 @@ export default function Particpant({key,name,avatar,inSession,onStage}){
     }
 
     return (
+        <div id="part-container">
         <div className="participant" className={sessText}>
             <img className="avatar" src={avatar} alt="user icon"/>
             <h3 className="name">{name}</h3>
             <p className="onStage">{stageText}</p>
+        </div>
         </div>
     );
 }

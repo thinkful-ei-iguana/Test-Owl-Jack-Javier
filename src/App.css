@@ -1,3 +1,23 @@
+*{
+  box-sizing: border-box;
+}
+
+#content-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  border: 1px solid red;
+}
+
+/*all imgs*/
+img{
+  width: 25px;
+  height: 25px;
+}
+h3{
+  font-size: 12px;
+}
+
+
 .App {
   text-align: center;
 }
@@ -20,3 +40,5 @@
 .App-link {
   color: #09d3ac;
 }
+
+
