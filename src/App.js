@@ -24,7 +24,9 @@ function App() {
     }
 
     {
-      
+      Chats.chatEvents.map(chat =>(
+        <Chat key={chat.timestamp} partId={chat.participantId} type={chat.type} message={chat.message} time={chat.time} timestamp={chat.timestamp}/>
+      ))
     }
     </div>
   );

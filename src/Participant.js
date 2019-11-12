@@ -2,7 +2,7 @@ import React from 'react';
 import './Participant.css';
 
 export default function Particpant({key,name,avatar,inSession,onStage}){
-    console.log(key,name,avatar,inSession,onStage)
+    //console.log(key,name,avatar,inSession,onStage)
 
     let stageText = '';
     let sessText ='';
